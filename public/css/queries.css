@@ -1,0 +1,305 @@
+@media (max-width: 84em) {
+  body {
+    padding: 0;
+  }
+
+  .heading-tertirary {
+    font-size: 2.5rem;
+  }
+}
+/* **************** */
+/*  BELOW 1200PX (Landscape Tablets) */
+/* **************** */
+
+@media (max-width: 78em) {
+  .card-container {
+    grid-gap: 3rem;
+  }
+}
+
+/* below 944px (Tablets) */
+
+@media (max-width: 74em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 68em) {
+  .card-container {
+    grid-gap: 2rem;
+  }
+
+  .billing-container .billing-card .billing-card__info p {
+    max-width: 60rem;
+  }
+}
+@media (max-width: 64em) {
+  .user-view {
+    flex-direction: column;
+  }
+
+  .user-view .user-view__menu {
+    padding: 0;
+    flex: auto;
+  }
+
+  .user-view .user-view__menu .side-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .user-view .user-view__menu .side-nav .side-nav--active {
+    border-bottom: 4px solid #fff !important;
+    border-left: none !important;
+  }
+
+  .side-nav li {
+    margin: 0;
+  }
+
+  .side-nav a:link,
+  .side-nav a:visited {
+    padding: 2rem 4rem;
+  }
+
+  .side-nav--active,
+  .side-nav li:hover {
+    border-bottom: 4px solid #fff !important;
+    border-left: none !important;
+  }
+
+  .side-nav a:hover,
+  .side-nav a:active {
+    transform: translateY(-3px);
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+
+  .alert {
+    width: 75vw;
+    height: auto;
+    padding: 1.6rem 4rem;
+  }
+
+  .section-header {
+    height: 58vw;
+  }
+  .section-header h1 {
+    font-size: 4rem;
+  }
+
+  .cta__content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+  }
+
+  .cta__content .btn:last-child {
+    margin-top: 2rem;
+  }
+
+  .billing-container .billing-card .billing-card__info p {
+    max-width: 45rem;
+    font-size: 1.4rem;
+  }
+
+  .billing-container .billing-card .billing-card__info .price {
+    font-size: 3rem;
+  }
+}
+
+/* ************* */
+/* BELOW  704px (Smaller tablets) */
+/* ************* */
+
+@media (max-width: 44em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading-box {
+    width: 80vw;
+  }
+
+  .side-nav a:link,
+  .side-nav a:visited {
+    font-size: 1.3rem;
+  }
+
+  .billing-container .billing-card .billing-card__info p {
+    max-width: 38rem;
+  }
+}
+
+/*  BELOW  544PX phones */
+
+@media (max-width: 38em) {
+  html {
+    font-size: 54%;
+  }
+
+  body {
+    padding-top: 8rem;
+  }
+  .header {
+    position: fixed;
+    padding: 0 1.2rem;
+    width: 100%;
+    height: 10rem;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+  }
+  .header .nav--user {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: stretch;
+    place-items: self-end;
+    padding: 1rem 0;
+    justify-content: space-between;
+  }
+  .header .nav--user a[href='/login'] {
+    align-self: center;
+    padding: 0 0 3rem 0;
+  }
+
+  .nav__el:not(:last-child) {
+    margin-right: 0rem;
+  }
+
+  .header a.nav__el.nav__el--cta {
+    display: none;
+  }
+
+  .user-view .user-view__menu .side-nav {
+    height: 5rem;
+    align-items: center;
+  }
+  .user-view .user-view__menu .side-nav li {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+  }
+  .user-view__form-container {
+    padding: 0 3rem;
+  }
+
+  .header .nav--user {
+    justify-self: end;
+  }
+
+  .main {
+    padding: 8rem 2rem;
+  }
+
+  .side-nav a:link,
+  .side-nav a:visited {
+    padding: 0;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card__footer p .card__footer-value {
+    font-size: 2.5rem;
+  }
+
+  .card__footer p.card__ratings {
+    font-size: 2rem;
+  }
+
+  .section-header h1 {
+    font-size: 3rem;
+  }
+
+  .section-description {
+    flex-direction: column;
+  }
+
+  .description-box {
+    margin-bottom: 5rem;
+  }
+
+  .login-form,
+  .signUp-form,
+  .recoverPassword-form {
+    padding: 5rem 2rem;
+  }
+
+  .signUp-suggestion {
+    flex-direction: column;
+  }
+
+  .section-cta .cta__img {
+    display: none;
+  }
+
+  .section-cta .cta {
+    padding: 5rem 3rem;
+  }
+
+  .billing-container {
+    max-width: 47rem;
+  }
+
+  .billing-container .billing-card .billing-card__info {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2rem 4rem;
+  }
+
+  .billing-container .billing-card .billing-card__info .purchase {
+    justify-self: auto;
+  }
+
+  .billing-container .billing-card .billing-card__info .price {
+    place-self: auto;
+  }
+}
+
+@media (max-width: 23em) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .card__footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card__footer p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__ratings {
+    grid-row: auto;
+  }
+
+  .card .btn-small,
+  .card .btn {
+    margin-top: 2rem;
+    grid-row: auto;
+    justify-self: inherit;
+    -ms-flex-item-align: inherit;
+    align-self: inherit;
+  }
+
+  .btn--green {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 21em) {
+}

@@ -1,0 +1,21 @@
+extends base
+
+block content
+  main.main
+    .billing-container
+    
+      each billing in billings
+        .billing-card
+          .billing-card__info
+            h1= billing.tour.name
+            .purchase 
+              span Purchased on :
+              span.date= billing.createdAt.toLocaleDateString('en-us')
+            p= billing.tour.description
+            span.price= billing.price.toLocaleString("en-US", {style:"currency", currency:"USD"})
+          .billing-card__footer
+            .billing-status
+             span Status:
+              if billing.paid
+              span.paid Paid
+            a.btn.btn--green.btn--small(href=`/tour/${billing.tour.slug}`) Details
